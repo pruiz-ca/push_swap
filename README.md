@@ -1,5 +1,5 @@
 # 🔀 push_swap
-Algorithm to sort a stack of random numbers with the minimum possible number of operations.
+Algorithm to sort a stack of random numbers with the minimum possible number of operations. Currently it sorts 500 in less than 5500 movements.
 
 ![pushswap](https://user-images.githubusercontent.com/74905890/129445832-2c861a61-8135-4ac0-a660-8c4861ce0880.gif)  
 *Visualizer made by [o-reo](https://github.com/o-reo/push_swap_visualizer)*
