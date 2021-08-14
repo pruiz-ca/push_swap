@@ -23,7 +23,7 @@ Algorithm to sort a stack of random numbers with the minimum possible number of 
   - pb: take the first element of stack A and put it at the top of B.
 
 ## Algorithm
-First, thanks to krios-fu for the help and letting me use his ideas ✨.
+First, thanks to [krios-fu](https://github.com/krios-fu) for the help and letting me use his ideas ✨.
 
 1. This algorithm starts by converting all numbers to 0-n based on relative value. The smallest number will always be 0, the next one will be 1 and so on.
 2. Then it starts rotating A and pushing numbers to B if it belongs to a chunk. The chunk size varies but for 100 numbers it's 30, so all numbers between 0-30 will be pushed to stack B as soon as it finds them in A. It does it in a 'sandwich' manner so half of the second chunk will be on top of chunk 1 and the other half at the bottom. This way it reduces movements by using rotations and reverse rotations to find the number we have to push back to stack A.
@@ -37,10 +37,10 @@ First, thanks to krios-fu for the help and letting me use his ideas ✨.
 It can be made by running `make bonus`. Run it like push_swap and introduce the list of operations that sorts those numbers. If the list actually sorts the numbers the checker returns 'OK', if not it returns 'KO'.
 
 ## Tester
-I included it to make it easier for evaluations. It displays the numbers generated, the checker result and the number of instructions.
+I included it to make it easier for evaluations. It displays the numbers generated, the checker result and the number of instructions. To execute it push_swap and tester_Mac has to be in the same folder as "tester.sh".
 
-To execute it push_swap and tester_Mac has to be in the same folder as "tester.sh". It accepts two arguments:
-1. How many numbers to test
-2. Bonus
+It accepts two arguments:
+- How many numbers to test
+- Bonus
 
 ![pushswap-tester](https://user-images.githubusercontent.com/74905890/129448066-89b7c037-187d-4acb-a153-725535ef95e8.jpg)
